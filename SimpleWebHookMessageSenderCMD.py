@@ -4,7 +4,7 @@ from discord import Webhook, RequestsWebhookAdapter
 
 #insert your discord webhook url
 
-url = 'https://discord.com/api/webhooks/927289945251516507/zhLrqRYnjKVDtPDuWThdFX5i5choFmylcqILFg0498EAv8zACdjxsWTqfpGgrye62gKs'
+url = ''
 
 #webhook will send this message
 texttoyell = input("What do you want it to say: ")
