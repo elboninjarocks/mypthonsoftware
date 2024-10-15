@@ -1,6 +1,6 @@
 # Made by Elijah Sarver, 2022
 import tkinter as t
-from discord import Webhook, RequestsWebhookAdapter, colour
+from discord import Webhook, SyncWebhook, colour
 import discord
 
 
@@ -11,7 +11,7 @@ import discord
 url = ''
 
 
-hook = Webhook.from_url(url, adapter=RequestsWebhookAdapter())
+hook = SyncWebhook.from_url(url)
 
 
 
@@ -35,11 +35,11 @@ bg="darkgray")
 e1.pack()
 
    
-#
+#sends the request
 def carrot():
     hook.send(e1.get())
 
-# Button to make webhook request
+# Button to call webhook request
 b1 = t.Button(
     text="Send it",
     width=15,
