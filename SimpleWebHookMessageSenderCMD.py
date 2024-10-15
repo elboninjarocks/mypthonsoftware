@@ -1,4 +1,5 @@
-from discord import Webhook, RequestsWebhookAdapter
+# Elijah Sarver 2022-2024
+from discord import Webhook, SyncWebhook
 
 #slightly less anoying bastard by elijah sarver
 
@@ -11,6 +12,6 @@ texttoyell = input("What do you want it to say: ")
 
 #cool fun webhook
  
-urlweb = Webhook.from_url(url, adapter=RequestsWebhookAdapter())
+urlweb = SyncWebhook.from_url(url)
 
 urlweb.send(texttoyell)
